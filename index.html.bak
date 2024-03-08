@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+	<link rel="icon" href="img/icon_borderless.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ram Khoury</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I'm a computer science student with a passion for coding and problem-solving. I have experience in web development, software engineering, and data science.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: Software Engineering project</h3>
+                <p>Played a key role in developing a cutting-edge High School Test System in a team environment, integrating JavaFX technologies. Leveraged a seamless client-server architecture and SQL database management.</p>
+                <p>Our system catered to the needs of modern high schools, enabling teachers to effortlessly generate exam questions and create comprehensive assessments. Thanks to its sophisticated capabilities, the system not only facilitated exam creation but also efficiently auto checked and graded exams, providing teachers with valuable statistical insights into their students' performance, also students were granted seamless access to log in, solve exams in real-time, and view their grades, promoting a productive and engaging learning experience.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: Machine Learning Project</h3>
+                <p>I am actively engaged in the development of a personal machine learning-driven Value trading project. This initiative centers on identifying undervalued stocks companies on the stock market, providing valuable insights into the company’s future.</p>
+                <p>This undertaking not only showcases my technical proficiency in machine learning but also underscores my commitment to independently learn new subjects as I’ve accumulated a lot of information about the stock market, financial reports, web scraping, how to leverage technology for strategic financial analysis and how to use python to its fullest ability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact information</h2>
+            <p>Email: <a href="mailto:ramkhoury99@gmail.com">ramkhoury99@gmail.com</a></p>
+            <p>Phone: +972 547641625</p>
+            <div class="social-links">
+                <div class="icon-container">
+					<a href="https://github.com/Ramkh9" class="fa fa-github"></a>
+					<div class="icon-overlay"></div>
+				</div>
+
+				<div class="icon-container">
+					<a href="https://www.linkedin.com/in/ram-khoury-493357213" class="fa fa-linkedin"></a>
+					<div class="icon-overlay"></div>
+				</div>
+
+                <!a href="mailto:ramkhoury99@gmail.com" class="fa fa-google"><!/a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ram Khoury</p>
+        </div>
+    </footer>
+</body>
+</html>
