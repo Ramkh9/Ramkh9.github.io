@@ -1,6 +1,10 @@
 /* Reset and General Styling */
+
 body {
-    margin: 0;
+    background-image: url('/img/background.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Do not repeat the image */
+	margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
@@ -54,7 +58,6 @@ nav ul li a {
 /* Section Styling */
 .section {
     padding: 40px 0;
-    background-color: #f9f9f9;
 }
 
 .section h2 {
