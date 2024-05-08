@@ -14,17 +14,5 @@ function moveSlide(n) {
     }
     const slideWidth = slides[0].offsetWidth;
     document.querySelector('.slider').style.transform = `translateX(-${slideIndex * slideWidth}px)`;
-	highlightDot(slideIndex); // Highlight the dot corresponding to the new slide
 
-}
-
-
-// Function to highlight the current dot
-function highlightDot(index) {
-    // Remove active class from all dots
-    dots.forEach((dot) => {
-        dot.classList.remove('active');
-    });
-    // Add active class to the selected dot
-    dots[index].classList.add('active');
 }
