@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat; /* Do not repeat the image */
 	margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+	font-family: 'Manrope';
 }
 
 .container {
@@ -25,6 +25,7 @@ header, footer {
     padding: 10px;
     text-align: center;
 }
+
 /* Header Styling */
 header {
     background-color: #333;
@@ -32,6 +33,11 @@ header {
     padding: 20px 0;
 }
 
+header a:hover{
+	font-weight: bold;
+  text-decoration: underline;
+
+}
 header h1 {
     margin: 0;
     font-size: 36px;
@@ -55,6 +61,11 @@ nav ul li a {
     font-size: 18px;
 }
 
+#contact p a:hover {
+    font-weight: bold;
+}
+
+
 /* Section Styling */
 .section {
     padding: 40px 0;
@@ -67,19 +78,78 @@ nav ul li a {
 }
 
 .project {
-    margin-bottom
+    margin-bottom: 20px; /* Add a margin-bottom value */
 }
+
 .project h3 {
     color: #333;
     font-size: 24px;
 }
 
-/* Contact Section Styling
-#contact {
-    background-color: #333;
-    color: #fff;
+/* Styles for the project slider */
+.project-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
- */
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: calc(100% - 80px); /* Adjust min-width to account for padding */
+    padding: 40px; /* Increase padding to make the slide larger */
+    border-radius: 5%;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+/* Buttons for slider navigation */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    background-color: #3333;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.dot.active {
+    background-color: blue;
+    color: blue; /* Add this line to ensure the dot is visible */
+}
+
+
 
 iframe {
     display: block;
@@ -89,13 +159,20 @@ iframe {
     border: none;
 }
 .fa {
-	padding: 30px;
+	padding: 20px;
+	width: 20px; /* Adjust width to desired size */
+    height: 20px; /* Adjust height to desired size */
 	font-size: 30px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-flex; /* Ensure the container takes only as much space as the content */
 	align-items: center; /* Center the icon vertically */
 	justify-content: center; /* Center the icon horizontally */
+	background-color: transparent; /* Set default background color to transparent */
+	border-radius: 20%; /* Make the background circular */
+	margin-top: 10px;
+    margin-bottom: 20px; /* Adjust the value as needed to create the desired space */
+
 }
 /* Define the default color for the icons */
 .fa-github {
@@ -107,25 +184,15 @@ iframe {
 }
 
 
-/* Change background color or add box-shadow on hover */
-.fa-github:hover {
-	color: white;
-    background-color: #5d2a89; /* Change background color to purple on hover */
-    border-radius: 20%; /* Make the background circular */
-    width: 10px; /* Set width and height to ensure a perfect circle */
-    height: 10px; /* Set width and height to ensure a perfect circle */
-    display: inline-flex; /* Ensure the container takes only as much space as the content */
-    align-items: center; /* Center the icon vertically */
-    justify-content: center; /* Center the icon horizontally */
+.fa:hover {
+    color: white;
+}
+
+.fa-github:hover,
+.fa-linkedin:hover {
+    background-color: #5d2a89; /* Change background color to purple for GitHub */
 }
 
 .fa-linkedin:hover {
-	color: white;
-    background-color: #0a66c2; /* Change background color to blue on hover */
-    border-radius: 20%; /* Make the background circular */
-    width: 10px; /* Set width and height to ensure a perfect circle */
-    height: 10px; /* Set width and height to ensure a perfect circle */
-    display: inline-flex; /* Ensure the container takes only as much space as the content */
-    align-items: center; /* Center the icon vertically */
-    justify-content: center; /* Center the icon horizontally */
+    background-color: #0a66c2; /* Change background color to blue for LinkedIn */
 }
