@@ -44,6 +44,32 @@ header h1 {
     text-align: center;
 }
 
+header .container_cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	position: relative;
+    padding: 10px;
+}
+
+.back-button {
+    position: absolute;
+    left: 10px;
+}
+
+.back-button button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.back-button button:hover {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
