@@ -233,3 +233,13 @@ iframe {
 .fa-linkedin:hover {
     background-color: #0a66c2; /* Change background color to blue for LinkedIn */
 }
+
+.repo-link a{
+    color: #5d2a89;
+
+}
+.repo-link a:hover{
+    font-size:17px;
+    text-decoration:underline;
+
+}
